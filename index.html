@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Svasth Vital</title>
+	<link rel="shortcut icon" type="image/jpg" href="./assets/img/favicon.ico"/>
+	<meta charset="utf-8" />
+	<link rel="icon" href="https://www.favicon.cc/?action=icon&file_id=961534/favicon.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link href="css/vendor/bootstrap.css" rel="stylesheet" />
+	<link href="css/vendor/font-awesome.css" rel="stylesheet" />
+	<link href="css/vendor/slick.css" rel="stylesheet" />
+	<link href="css/vendor/slick-theme.css" rel="stylesheet" />
+	<link href="css/vendor/odometer-theme-default.css" rel="stylesheet" />
+	<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	
+	<link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<header>
+		
+
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="https://www.1mg.com">Shop </a></li>
+				  
+					  <li><a href="https://www.aegonlife.com/locate-branch/rajasthan/jaipur">Insurance</a></li> 
+					
+					  <li><a href= "/service/services.html">Services</a></li>    
+					<li><a href="about.html">About Us</a></li>
+				   
+				   <li><a href="logsin/dist/index.html">Login/Sign-Up</a></li>
+			   
+
+
+				</ul>
+			</div>
+			<div class="mobile-menu"><i class="fa fa-bars"></i></div>
+		</div>
+
+	</header>
+
+ <div class="home-slider">
+		<div class="home-slider--wrapper">
+			<div>
+				<div class="home-slider--wrapper__inner" style="background-image: url('assets/img/slider.jpg')">
+					<div class="container">
+						<br><br><br><br><br> 
+						<h1>WELCOME TO svasth vital</h1>
+						<span class="dot-dash">.</span>
+						<h3>Our clients are our first priority<br>A personal relationship with medical excellence.</h3>
+						<div class="slider-buttons">
+
+							<a href="about.html" class="button">About us</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="home-slider--wrapper__inner" style="background-image: url('assets/img/Covid19.png')">
+					<div class="container">
+						<br><br><br><br><br> 
+						<h1>Latest Covid-19 Updates</h1>
+						<span class="dot-dash">.</span>
+						<h3>Get latest Covid-19 updates</h3>
+						<div class="slider-buttons">
+
+							<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" class="button">Get Now</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="home-slider--wrapper__inner" style="background-image: url('assets/img/appoinement.jpg')">
+					<div class="container">
+						<br><br><br><br><br> 	
+						<div class="fontcol" >
+
+						<h1>Live Video Consultancy</h1>
+						<span class="dot-dash">.</span>
+					     </div>
+						<div class="slider-buttons">
+
+							<a href="patients login/video-call.html" class="button">Click  Now</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		   
+ 
+		</div>
+		<div class="home-slider--nav">
+			<div class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+			<div class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+		</div>
+		<div class="home-slider--anchor">
+			<span><i class="fa fa-hospital-o" aria-hidden="true"></i></span>
+		</div>
+	</div>
+
+
+	<div class="wrapper">
+		<section class="four-elements">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="four-elements--image"><i><img src="assets/img/Ambulance.png" alt="" /></i></div>
+						 <h3><a href="https://www.dial4242.com/">BOOK AMBULANCE</a></h3>
+							
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="four-elements--image"><i><img src="assets/img/Research-laboratory-993475228.jpg" alt="" /></i></div>
+						<h3><a href="https://jmrionline.com/jmri"> SV Library </a></h3> 
+						
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="four-elements--image"><i><img src="assets/img/Aarogya-Setu-App-.jpg" alt="" /></i></div>
+						<h3><a href="https://www.aarogyasetu.gov.in/">Aarogya Setu</a></h3>
+						
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="four-elements--image"><i><img src="assets/img/Ambulance.png" alt="" /></i></div>
+						<h3><a href="https://www.icmr.gov.in/">Covid-19</a></h3>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<style>
+			h1 {
+				text-align: center;
+			}
+		</style>
+
+		<body>
+			<h1>Current Affairs</h1>
+
+		</body>
+
+
+		<section class="our-history">
+			<div class="container">
+			
+				<div class="row">
+				
+					<div class="col-md-5 col-sm-12 col-xs-12">
+					
+						<img src="assets/img/Monitor.jpg" alt="" />
+					</div>
+					<div class="col-md-7 col-sm-12 col-xs-12">
+
+
+						<h2>Get latest COVID-19 Updates</h2>
+						<!-- <h2>COVID-19: What You Need to Know About the Vaccine </h2> -->
+						<p>
+							
+							<div class="content">
+								<form id="add-cafe-form">
+								</form>
+								<ul id="cafe-list"></ul>
+							</div>
+						</p>
+						<a href="https://www.who.int/news-room/q-a-detail/vaccines-and-immunization-what-is-vaccination?adgroupsurvey={adgroupsurvey}"
+							class="button">know more</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	<div class="content">
+		<form id="add-cafe-form">
+		</form>
+		<ul id="cafe-list"></ul>
+	</div>
+
+		<section class="case-study">
+			<div class="container">
+				<h2>Departments</h2>
+				<p>Department is responsible for the administration of professional nursing practice, research, and
+					policy.</p>
+				<span class="dot-dash dark">.</span>
+			</div>
+			<div class="container">
+				<div class="case-study--sliders">
+					<div class="case-study--left">
+						<div class="case-study--left__textslider">
+							<div>
+								<div class="case-study--left__textslider__image"><i class="fa fa-lightbulb-o"
+										aria-hidden="true"></i></div>
+								<h4>CARDIOLOGY</h4>
+								<p>Cardiology is a medical specialty and a branch of internal medicine concerned
+									with
+									disorders of the heart. It deals with the diagnosis and treatment of such
+									conditions
+									as congenital heart defects, coronary artery disease, electrophysiology, heart
+									failure and valvular heart disease..</p>
+								<a href="#" class="button small">Read More</a>
+							</div>
+							<div>
+								<div class="case-study--left__textslider__image"><i class="fa fa-lightbulb-o"
+										aria-hidden="true"></i></div>
+								<h4>NEUROLOGY</h4>
+								<p>Neurologists diagnose, treat and manage disorders that affect the central nervous
+									system (the brain and spinal cord) and the peripheral nervous system (nerves and
+									muscles which activate movement and transmit sensation from all parts of the
+									body to
+									the brain).</p>
+								<a href="#" class="button small">Read More</a>
+							</div>
+							<div>
+								<div class="case-study--left__textslider__image"><i class="fa fa-lightbulb-o"
+										aria-hidden="true"></i></div>
+								<h4>Hepatology</h4>
+								<p>Hepatologist is a specialist in the branch of medicine called Hepatology, which
+									includes the study of body parts such as the liver, the biliary tree, the
+									gallbladder and the pancreas. A hepatologist manages disorders in these areas
+								</p>
+								<a href="#" class="button small">Read More</a>
+							</div>
+							<div>
+								<div class="case-study--left__textslider__image"><i class="fa fa-lightbulb-o"
+										aria-hidden="true"></i></div>
+								<h4>Pediatrics</h4>
+								<p>Pediatrics is the branch of medicine dealing with the health and medical care of
+									infants, children, and adolescents from birth up to the age of 18. The word
+									“paediatrics” means “healer of children”; they are derived from two Greek words:
+									(pais = child) and (iatros = doctor or healer).</p>
+								<a href="#" class="button small">Read More</a>
+							</div>
+							<div>
+								<div class="case-study--left__textslider__image"><i class="fa fa-lightbulb-o"
+										aria-hidden="true"></i></div>
+								<h4>Eye care</h4>
+								<p>Ophthalmology is a branch of medicine and surgery which deals with the diagnosis
+									and
+									treatment of eye disorders. An ophthalmologist is a specialist in ophthalmology.
+									The
+									credentials include a degree in medicine, followed by additional four to five
+									years
+									of ophthalmology residency training. Ophthalmology residency training programs
+									may
+									require a one-year pre-residency training in internal medicine, pediatrics, or
+									general surgery. Additional specialty training (or fellowship) may be sought in
+									a
+									particular aspect of eye pathology.
+
+								</p>
+								<a href="https://www.centreforsight.net/" class="button small" target="_blank">Read More</a>
+							</div>
+							<div>
+								<div class="case-study--left__textslider__image"><i class="fa fa-lightbulb-o"
+										aria-hidden="true"></i></div>
+								<h4>ayurvedic</h4>
+								<p>AyurVital is a traditional Indian system of medicine. It aims to preserve health
+									and
+									wellness by keeping the mind, body, and spirit in balance and preventing disease
+									rather than treating it. To do so, it employs a holistic approach that combines
+									diet, exercise, and lifestyle changes.
+
+								</p>
+								<a href="#" class="button small">Read More</a>
+							</div>
+							<div>
+								<div class="case-study--left__textslider__image"><i class="fa fa-lightbulb-o"
+										aria-hidden="true"></i></div>
+								<h4>Physiotherapy</h4>
+								<p>Physiotherapy is treatment to restore, maintain, and make the most of a patient's
+									mobility, function, and well-being. Physiotherapy helps through physical
+									rehabilitation, injury prevention, and health and fitness. Physiotherapists get
+									you
+									involved in your own recovery.</p>
+
+								</p>
+								<a href="#" class="button small">Read More</a>
+							</div>
+
+						</div>
+						<div class="case-study--left__dots"></div>
+					</div>
+					<div class="case-study--right">
+						<div class="case-study--right__imageslider">
+							<div>
+								<img src="assets/img/case.jpg" alt="" />
+							</div>
+							<div>
+								<img src="assets/img/case2.jpg" alt="" />
+							</div>
+							<div>
+								<img src="assets/img/case3.jfif" alt="" />
+							</div>
+							<div>
+								<img src="assets/img/case4.jpg" alt="" />
+							</div>
+							<div>
+								<img src="assets/img/case5.jpg" alt="" />
+							</div>
+							<div>
+								<img src="assets/img/case6.jpg" alt="" />
+							</div>
+							<div>
+								<img src="assets/img/case7.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="statistics">
+			<div class="container">
+				<div class="statistics--item">
+					<div class="statistics--item__image"><i class="fa fa-user-md"></i></div>
+					<h3 class="odometer first">0 </h3>
+					<h5> Doctors</h5>
+				</div>
+				<div class="statistics--item">
+					<div class="statistics--item__image"><i class="fa fa-hospital-o"></i></div>
+					<h3 class="odometer second">0</h3>
+					<h5>Hospitals Associated</h5>
+				</div>
+				<div class="statistics--item">
+					<div class="statistics--item__image"><i class="fa fa-thumbs-o-up"></i></div>
+					<h3 class="odometer third">0</h3>
+					<h5>Satisfied Coustomer</h5>
+				</div>
+				<div class="statistics--item">
+					<div class="statistics--item__image"><i class="fa fa-shopping-cart"></i></div>
+					<h3 class="odometer fourth">0</h3>
+					<h5>Products </h5>
+				</div>
+				<div class="statistics--item">
+					<div class="statistics--item__image"><i class="fa fa-medkit"></i></div>
+					<h3 class="odometer fifth">0</h3>
+					<h5>Our Collabration</h5>
+				</div>
+			</div>
+		</section>
+		<p>
+		<div>
+			<iframe style="border:0; width: 100%; height: 350px;"
+				src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=jaipur%20hospitals+(Title)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
+				frameborder="0" scrolling="no" marginheight="0" marginwidth="0" frameborder="0"
+				allowfullscreen></iframe>
+		</div>
+		<section class="partners">
+			<div class="container">
+				<h2>trending Hospitals in Jaipur </h2>
+				<p>The Power to Heal</p>
+				<span class="dot-dash dark">.</span>
+				<div class="partners--container">
+					<div class="partners--item">
+						<div class="partners--item__image">
+
+							<a href="https://www.manipalhospitals.com/jaipur/"><img
+									src="assets/img/mhj-hospital-banner.jpg"
+									alt="" /></a>
+
+						</div>
+					</div>
+					<div class="partners--item">
+						<div class="partners--item__image">
+							<a
+								href="https://www.fortishealthcare.com/india/fortis-escorts-hospital-in-jaipur-rajasthan"><img
+									src="https://www.healthcareradius.in/public/images/2019/10/24/fortis-escorts.jpg"
+									alt="" /></a>
+						</div>
+					</div>
+					<div class="partners--item">
+						<div class="partners--item__image">
+
+							<a href="https://www.apexhospitals.com/malviya-nagar/"><img src="assets/img/apex-hospital-jaipur-main-banner.jpg" alt="" /></a>
+
+
+						</div>
+					</div>
+					<div class="partners--item">
+						<div class="partners--item__image">
+
+							<a href="https://www.apollospectra.com/our-hospitals/jaipur/c-scheme/best-hospital-in-c-scheme-jaipur/"><img src="assets/img/Apollo_Spectra_Hospitals_Tardeo_Building.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="partners--item">
+						<div class="partners--item__image">
+
+							<a href="https://kivihealth.com/clinic/shree-sumangal-polyclinic-and-hospital"><img src="assets/img/12.jpg" alt="" /></a>
+
+
+						</div>
+					</div>
+					<div class="partners--item">
+						<div class="partners--item__image">
+
+							<a href="https://www.royalorthopaedichospital.com/"><img src="assets/img/2020-09-06.jpg" alt="" /></a>
+							
+						</div> 
+					</div>        
+					<div class="partners--item">
+						<div class="partners--item__image">
+
+							<a href="https://www.mgmch.org/"><img src="assets/img/New photo_MGH.jpg" alt="" /></a>
+
+
+						</div>
+					</div>
+					<div class="partners--item">
+						<div class="partners--item__image">
+
+							<a href="https://www.narayanahealth.org/"><img src="assets/img/Narayana_Multispecialty_Hospital,_Whitefield.jpg" alt="" /></a>
+
+
+						</div>
+					
+				   
+				</div>
+			</div>
+		</section>
+
+		<section class="get-started">
+			<div class="container">
+				<h2>Great futures are built with a small charity, let’s go!</h2>
+				<p>For the happiness of others.<p><br></p></p><br><br><br>
+				<a href="Dona/dist/index.html" class="button">DONATE</a>
+			</div>
+		</section>
+	</div>
+
+  <foter id="foter">
+
+	<div class="foter-top">
+	  <div class="container">
+		<div class="row">
+
+		  <div class="col-lg-3 col-md-6 foter-contact">
+			<h3>Svasth Vital </h3>
+			<p>
+			  Jaipur-Ajmer Express Highway, <br>
+			  Dehmi Kalan, Near GVK Toll Plaza<br>
+			  Jaipur, Rajasthan 303007 <br><br>
+			  <strong>Phone:</strong> +91-22-2278 5000<br>
+			  <strong>Email:</strong> sagarashish@gmail.com<br>
+			</p>
+		  </div>
+
+		  <div class="col-lg-2 col-md-6 foter-links">
+			<h4>Useful Links</h4>
+			<ul>
+			  <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+			  <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+			  <li><i class="bx bx-chevron-right"></i> <a href="#">Our Doctors</a></li>
+			  <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+			  <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+			  <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+			</ul>
+		  </div>
+
+		  <div class="col-lg-3 col-md-6 foter-links">
+			<h4>Our Services</h4>
+			<ul>
+			  <li><i class="bx bx-chevron-right"></i> <a href="library.html">Health Records</a></li>
+			  <li><i class="bx bx-chevron-right"></i> <a href="#">Shops</a></li>
+			  <li><i class="bx bx-chevron-right"></i> <a href="#">Hospitals Associated</a></li>
+			  <li><i class="bx bx-chevron-right"></i> <a href="#">Pathalogy Services</a></li>
+			  <li><i class="bx bx-chevron-right"></i> <a href="donate1/donate2.html">donate </a></li>
+			  <li><i class="bx bx-chevron-right"></i> <a href="#">Covid Quiz</a></li>
+			</ul>
+		  </div>
+
+		 <div class="col-lg-4 col-md-6 foter-newsletter">
+			<h4>Our Newsletter</h4>
+			<p>Don't Forget to join our weekly Newsletter to keep you updated about our website its totally free :)
+			</p>
+			<form action="" method="post">
+			  <input type="email" name="email"><input type="submit" value="Subscribe">
+			</form>
+		  </div>  
+
+		</div>
+	  </div>
+	</div>
+
+	<div class="container d-md-flex py-4">
+
+	  <div class="me-md-auto text-center text-md-start">
+		<div class="copyright">
+		  &copy; Copyright <strong><span>Sagar And Ashish</span></strong>. All Rights Reserved
+		</div>
+		<div class="credits">
+		
+		  Designed by <a href="#">Sagar and Ashish</a>
+		</div>
+	  </div>
+	  
+	</div>
+  </foter>
+	
+
+	<foter>
+		<div class="container">
+			<div class="row">
+			  
+				<div class="col-md-6">
+					
+				</div>
+			</div>
+		</div>
+	</foter>
+	<div id="preloader"></div>
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+		class="bi bi-arrow-up-short"></i></a>
+		
+		<script>
+            
+            var config = {
+    apiKey: "AIzaSyC7N9aVMujDF-lcP7QXCoroliyhc97jbyY",
+    authDomain: "horizontal-tube-313218.firebaseapp.com",
+    databaseURL: "https://horizontal-tube-313218-default-rtdb.firebaseio.com",
+    projectId: "horizontal-tube-313218",
+    storageBucket: "horizontal-tube-313218.appspot.com",
+    messagingSenderId: "821819306720",
+    appId: "1:821819306720:web:94b263906fa6951fc49685",
+    measurementId: "G-BDQ19711FZ"
+  };
+            
+            
+            firebase.initializeApp(config);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
+        <script src="capp.js"></script>
+  
+	  <script type="text/javascript">
+		  window.odometerOptions = {
+			  format: '(,ddd)',
+		  };
+	  </script>
+
+	<script src="js/vendor/jquery-3.1.0.min.js"></script>
+	<script src="js/vendor/jquery.easing.min.js"></script>
+	<script src="js/vendor/tether.js"></script>
+	<script src="js/vendor/bootstrap.js"></script>
+	<script src="js/vendor/slick.js"></script>
+	<script src="js/vendor/isotope.pkgd.min.js"></script>
+	<script src="js/vendor/odometer.min.js"></script>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>

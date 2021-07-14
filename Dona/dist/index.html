@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Svasth Vital</title>
+  <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+
+  <link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/78060/animate.min.css" rel="stylesheet" type="text/css">
+  <div class="logo">
+    <a href="../../index.html"><img src="logo.png " alt="" /></a>
+
+  </div>
+
+  <div class="donate">
+    <button>Donate</button>
+    <form name="donAmount" id="donAmount">
+      <input type="radio" value="50" name="amount" id="three">
+      <label for="three">50 ₹</label>
+      <input type="radio" value="100" name="amount" id="three">
+      <label for="three">100 ₹</label>
+      <input type="radio" value="200" name="amount" id="twentyfive">
+      <label for="twentyfive">200 ₹</label>
+      <input type="radio" value="500" name="amount" id="hundred">
+      <label for="hundred">500₹</label>
+      <input type="radio" value="other" name="amount" id="other">
+      <label for="other">Other</label>
+    </form>
+  </div>
+
+  <div id="custom">
+    <h2>Donation Amount</h2>
+    <form name="customDonation" id="customDonation">
+      <div class="input-group-1">
+        <label for="custom-amount">₹</label>
+        <input id="custom-amount" name="custom-amount" type="text" >
+        <div class="warn"></div>
+      </div>
+    </form>
+    <div class="clearfix">
+      <button class="back" type="button">Back
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <button class="next" type="button">Next</button>
+    </div>
+  </div>
+
+  <section id="details">
+    <div class="contact-info">
+      <h2>Basic Information</h2>
+      <form class="clearfix">
+        <div class="input-group-2">
+          <label><b>First Name</b></label>
+          <input type="text" required>
+        </div>
+        <div class="input-group-2"required>
+          <label><b>Last Name</b></label>
+          <input type="text" required>
+        </div>
+        <div class="input-group-1">
+          <label><b>Email Address</b></label>
+          <input type="text">
+        </div>
+        <hr>
+        <div class="input-group-1">
+          <label><b>Street Address</b></label>
+          <input type="text">
+        </div>
+        <div class="input-group-3">
+          <label><b>City</b></label>
+          <input type="text">
+        </div>
+        <div class="input-group-3">
+          <label><b>State</b></label>
+          <input type="text">
+        </div>
+        <div class="input-group-3">
+          <label><b>Zip Code</b></label>
+          <input type="text">
+        </div>
+      </form>
+      <div class="clearfix">
+        <button class="back" type="button">Back
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button class="next" type="button">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="card">
+    <div class="contact-info">
+      <h2>Payment Information</h2>
+      <form class="clearfix">
+        <div class="input-group-1">
+          <label><b>Card Number</b></label>
+          <input type="text">
+        </div>
+        <div class="clearfix">
+          <div class="input-group-2">
+            <label><b>Expiration Date</b></label>
+            <input type="text">
+          </div>
+
+          <div class="input-group-2">
+            <label><b>Security Code (CVV)</b></label>
+            <input type="text">
+          </div>
+        </div>
+        <hr>
+        <div class="input-group-1">
+          <label><b>Employer</b></label>
+          <input type="text">
+        </div>
+
+        <div class="input-group-1">
+          <label><b>Occupation</b></label>
+          <input type="text">
+        </div>
+      </form>
+      <div class="clearfix">
+        <button class="back" type="button">Back
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button class="next" type="button">Review</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="processing">
+    <div class="check">
+      <span></span>
+      <div class="mask">
+      </div>
+      <span></span>
+    </div>
+
+    <div class="outer">
+      <div class="inner">
+      </div>
+      <div class="progress">
+      </div>
+    </div>
+    <span class="message">Processing</span>
+  </section>
+
+  <section id="check">
+    <h2>Confirm Payment</h2>
+    <p><b><b>Please confirm your contribution of </b></b> </p>
+    <span>8888₹</span>
+    <button class="next" type="button"><b>Confirm</b></button>
+  </section>
+
+  <section id="confirm">
+    <h2><b>Thank You!</b></h2>
+    <p><b>Thank you for your Generous Grant of</b> <span class="amount">25₹</span> <b>for our Brighten Up Campaign.
+      </b><br><strong><b>570</b></strong>!</p>
+  </section>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
