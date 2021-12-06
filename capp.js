@@ -1,5 +1,5 @@
 const cafeList = document.querySelector('#cafe-list');
-const form = document.querySelector('#add-cafe-form');
+const form = document.querySeleDctor('#add-cafe-form');
 //
 function renderCafe(doc){
     let li = document.createElement('li');
