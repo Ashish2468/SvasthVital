@@ -3,7 +3,7 @@ const form = document.querySeleDctor('#add-cafe-form');
 //
 function renderCafe(doc){
     let li = document.createElement('li');
-    let name = document.createElement('span');
+    let name = document.createElement('spanDD
     let city = document.createElement('span');
     let tel = document.createElement('span');
     let cross = document.createElement('div');
